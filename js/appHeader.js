@@ -48,7 +48,7 @@ export const createHeader = (city) => {
 
     const showError = (message) => {
         errorBlock.classList.add('show-error');
-        errorBlock.textContent = message;
+        errorBlock.textContent = `${searchInput.value} недопустимое название города...`;
     }
 
     searchBtn.addEventListener('click', async () => {
